@@ -3,3 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgba(119, 119, 119, 0.277);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+/* styling the section */
+
+.section {
+  margin: 0 auto;
+  padding: 7rem 10rem;
+  border-bottom: 1px solid #333;
+  background-color: #fff;
+  max-width: 125rem;
+}
+
+/* Landing section */
+.landing-area {
+  height: 100vh;
+}
+
+h1 {
+  font-size: 10rem;
+  font-weight: bold;
+
+  margin-bottom: 10rem;
+}
+
+h2 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.landing-area p {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+#landing-button {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: rgb(129, 185, 235);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+}
