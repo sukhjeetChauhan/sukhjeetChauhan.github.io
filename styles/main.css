@@ -25,7 +25,15 @@ html {
 
 /* Landing section */
 .landing-area {
+  background-image: url('/images/landing.png');
+  background-image: url('/images/landing.png'),
+    linear-gradient(rgb(129, 185, 235), rgb(170, 203, 233));
+  background-size: cover;
   height: 100vh;
+}
+
+.section.landing-area {
+  max-width: 100vw;
 }
 
 h1 {
