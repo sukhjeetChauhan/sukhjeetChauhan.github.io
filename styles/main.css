@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(119, 119, 119, 0.277);
+  background-color: rgba(213, 213, 213, 0.277);
 }
 
 html {
@@ -20,7 +20,8 @@ html {
   padding: 7rem 10rem;
   border-bottom: 1px solid #333;
   background-color: #fff;
-  max-width: 125rem;
+  max-width: 120rem;
+  overflow: hidden;
 }
 
 /* Landing section */
@@ -56,7 +57,37 @@ h2 {
 #landing-button {
   display: inline-block;
   font-size: 1.5rem;
+  text-decoration: none;
   background-color: rgb(129, 185, 235);
   padding: 1rem 2rem;
   border-radius: 100px;
+}
+
+/* blog List styles */
+.blog-area h2 {
+  margin-top: 4rem;
+}
+.blog-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-item a {
+  text-decoration: none;
+}
+
+.blog-num {
+  font-size: 1.7rem;
+  margin-right: 1rem;
+}
+
+.blog-list a {
+  font-size: 1.7rem;
 }
