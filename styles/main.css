@@ -32,6 +32,7 @@ html {
   background-image: url('/images/landing.png'),
     linear-gradient(rgb(129, 185, 235), rgb(170, 203, 233));
   background-size: cover;
+  background-position-x: right;
   height: 100vh;
 }
 
@@ -54,7 +55,7 @@ h2 {
 
 .landing-area p {
   font-size: 2rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 1rem; */
 }
 
 #landing-button {
@@ -66,6 +67,7 @@ h2 {
   background-color: #6bad78;
   padding: 1rem 2rem;
   border-radius: 100px;
+  margin-top: 5rem;
 }
 
 /* blog List styles */
@@ -163,4 +165,48 @@ h2 {
 .question {
   color: rgb(75, 154, 223);
   margin-bottom: 2rem !important;
+}
+
+/* CSS making page responsive */
+
+@media (max-width: 830px) {
+  html {
+    font-size: 55%;
+  }
+  h1 {
+    margin-top: 20rem;
+  }
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 45%;
+  }
+
+  h1 {
+    margin-top: 20rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+  }
+
+  .landing-area p {
+    font-size: 2.25rem;
+  }
+
+  #landing-button {
+    margin-top: 25rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+
+  .landing-area p {
+    color: #000;
+  }
 }
