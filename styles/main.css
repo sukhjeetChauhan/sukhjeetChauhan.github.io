@@ -77,8 +77,11 @@ h2 {
 
 .list-item {
   display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
+  justify-content: space-between;
+
+  background-color: #d8d7d73a;
+  padding: 1.5rem;
+  border-radius: 9px;
 }
 
 .list-item a {
@@ -87,11 +90,24 @@ h2 {
 
 .blog-num {
   font-size: 1.7rem;
+  margin-right: 0.75rem;
 }
 
 .blog-img {
   width: 8rem;
   height: 8rem;
+  border: 2px solid #555;
+  border-radius: 9px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.list-detail {
+  display: flex;
+}
+
+.list-detail div > p {
+  font-size: 1.5rem;
 }
 
 .blog-list a {
