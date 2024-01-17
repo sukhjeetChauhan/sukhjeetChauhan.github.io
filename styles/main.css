@@ -201,12 +201,34 @@ h2 {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 550px) and (max-height: 700px) {
   html {
     font-size: 40%;
+  }
+
+  h1 {
+    margin-top: 10rem;
   }
 
   .landing-area p {
     color: #000;
   }
+
+  #landing-button {
+    margin-top: 10rem;
+    font-size: 2.5rem;
+  }
+
+  .list-detail div > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) and (max-height: 900px) {
+  html {
+    font-size: 40%;
+  }
+  /* #landing-button {
+    margin-top: 1rem;
+  } */
 }
