@@ -11,7 +11,7 @@ body {
 html {
   font-size: 62.5%;
   color: #444;
-  font-family: sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 /* styling the section */
@@ -163,8 +163,9 @@ h2 {
 }
 
 .question {
-  color: rgb(75, 154, 223);
+  color: rgb(49, 103, 149);
   margin-bottom: 2rem !important;
+  font-weight: bold;
 }
 
 /* CSS making page responsive */
