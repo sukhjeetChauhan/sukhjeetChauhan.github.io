@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS positioning</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <article class="blog-article">
+      <h1>Relative, Absolute, and Fixed positioning</h1>
+      <h2>
+        In depth explaination of CSS positioning properties and their
+        differences.
+      </h2>
+      <h3>18 January 2024</h3>
+
+      <div class="content">
+        <img class="float" src="/images/css-27192_640.png" />
+        <p>
+          CSS positioning properties are used to move elements around on an HTML
+          page. Elements exist in form of a block of pixels, which occupy a
+          certain height and a width. By default, the Position of all the
+          elements on the page is
+          <span>Static</span>. Static position means elements follow the normal
+          flow of an HTML page. We can change the position attribute to any of
+          the following:
+        </p>
+        <ul>
+          <li>Relative</li>
+          <li>Absolute</li>
+          <li>Fixed</li>
+          <li>Sticky</li>
+        </ul>
+
+        <p>
+          We will be discussing first three position attributes in this blog. If
+          you want to have more information on the sticky property, then visit
+          this
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+            >link</a
+          >
+        </p>
+        <p>
+          Lets take an example as illustrated in Image 1. We have a parent and a
+          sibling element. Within the parent container there are three child
+          elements. The child elements are in brown, bisque and green color. The
+          sibling element is in purple color. All the elements are in their
+          default positions.
+        </p>
+
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/chrome-screenshots/original-layout.png"
+              alt="Three boxes in one big box"
+            />
+            <img
+              src="/images/html-css-blog/codesnap/html.png"
+              alt="HTML setup"
+            />
+          </div>
+          <p>Image 1</p>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>

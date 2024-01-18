@@ -156,8 +156,39 @@ h2 {
   margin-bottom: 3rem;
 }
 
-.blog-article p {
-  font-size: 1.5rem;
+.float {
+  float: right;
+  margin: 0 2rem;
+  width: 30%;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-container > p {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #2b8a3e;
+}
+
+.image-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.image-box img {
+  width: auto;
+  height: 30rem;
+}
+
+.content p {
+  font-size: 1.75rem;
   line-height: 1.25;
   margin-bottom: 4rem;
 }
