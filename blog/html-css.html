@@ -17,7 +17,15 @@
       <h3>18 January 2024</h3>
 
       <div class="content">
-        <img class="float" src="/images/css-27192_640.png" />
+        <div class="image-container float">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/chrome-screenshots/original-layout.png"
+              alt="Three boxes in one big box"
+            />
+          </div>
+          <p>Image 1.1</p>
+        </div>
         <p>
           CSS positioning properties are used to move elements around on an HTML
           page. Elements exist in form of a block of pixels, which occupy a
@@ -27,42 +35,200 @@
           flow of an HTML page. We can change the position attribute to any of
           the following:
         </p>
-        <ul>
-          <li>Relative</li>
-          <li>Absolute</li>
-          <li>Fixed</li>
-          <li>Sticky</li>
-        </ul>
-
-        <p>
+            <ul class="list-style">
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+          </ul>
+          <p>
           We will be discussing first three position attributes in this blog. If
-          you want to have more information on the sticky property, then visit
-          this
+          you want more information on the sticky property, then visit this
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
             >link</a
           >
         </p>
         <p>
-          Lets take an example as illustrated in Image 1. We have a parent and a
-          sibling element. Within the parent container there are three child
-          elements. The child elements are in brown, bisque and green color. The
-          sibling element is in purple color. All the elements are in their
-          default positions.
+          Lets take an example as illustrated in Images 1.1 and 1.2. We have a
+          parent and a sibling element. Within the parent container there are
+          three child elements. The child elements are in brown, bisque and
+          green color. The sibling element is in purple color. All the elements
+          are in their default positions.
         </p>
 
-        <div class="image-container">
-          <div class="image-box">
-            <img
-              src="/images/html-css-blog/chrome-screenshots/original-layout.png"
-              alt="Three boxes in one big box"
-            />
+        <div class="image-container box-2">
+          <div class="image-box ">
             <img
               src="/images/html-css-blog/codesnap/html.png"
               alt="HTML setup"
             />
+            <img
+              src="/images/html-css-blog/codesnap/page-setup.png"
+              alt="CSS properties"
+            />
           </div>
-          <p>Image 1</p>
+          <p>Image 1.2</p>
         </div>
+
+        <h2 class="margin-top-10">Relative positioning</h2>
+        <p>
+          By setting the position to relative, an element offsets itself from
+          its static position. The flow of the HTML is not effected by this
+          setting, which means that element keeps its block of space on the
+          page. Another important thing is that the element only offsets from
+          its position if any of the top, bottom, left and right property has
+          any value set to it. Otherwise it just behaves like a normal static
+          element.
+        </p>
+        <p>Lets have a look at illustration 2.1 below.</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/codesnap/child-2.png"
+              alt="HTML setup"
+            />
+            <img
+              src="/images/html-css-blog/chrome-screenshots/relative-child.png"
+              alt="CSS properties"
+            />
+          </div>
+          <p>Image 2.1</p>
+        </div>
+        <p>
+          Here the second child with bisque color position is set to relative
+          and its position is offset from its original position by 40px from top
+          and 40px from left. Notice how the other child elements are still in
+          their original positions. That shows that this property doesnot effect
+          normal flow of the HTML page.
+        </p>
+        <h2 class="margin-top-10">Absolute positioning</h2>
+        <p>
+          Here is when things start getting bit tricky. When you set a position
+          of the element to absolute, its position will depend on whether its
+          parent element has absolute or relative position set to it or not. The
+          object will move out of the normal flow of HTML page, thus effecting
+          position of the surrounding elements. The images 3.1 and 3.2 shows the
+          difference in absolute positioning with parents element set to
+          relative and without parent element set to relative. Also, you can
+          notice that distance between child 1 and child 3 has decreased because
+          child 2 has moved out of the HTML page flow.
+        </p>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/codesnap/pos-absolute.png"
+              alt="HTML setup"
+            />
+            <img
+              src="/images/html-css-blog/chrome-screenshots/without-relpos.png"
+              alt="CSS properties"
+            />
+          </div>
+          <p>Image 3.1</p>
+        </div>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/codesnap/parent.png"
+              alt="code for absolute position"
+            />
+            <img
+              src="/images/html-css-blog/chrome-screenshots/absolute-with-relpos.png"
+              alt="bisque block absolute positioned within the parent element"
+            />
+          </div>
+          <p>Image 3.2</p>
+        </div>
+        <p>
+          As you can see when the position of parent element is set to relative,
+          the child element with absolute positioning align itself according to
+          the position of the parent. When the position of parent element is
+          static, the child element align itself according to the viewport as
+          seen in image 3.1.
+        </p>
+        <p>
+          Further we can have a look at what happens to the element with no
+          parent element as seen with the sibling element( purple block). As
+          seen in the Image 3.3, the element always absolutely positions itself
+          according to the viewport.
+        </p>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/codesnap/sibling-absolute.png"
+              alt="code for sibling element"
+            />
+            <img
+              src="/images/html-css-blog/chrome-screenshots/absolute-sibling.png"
+              alt="purple block absolute positioned"
+            />
+          </div>
+          <p>Image 3.3</p>
+        </div>
+        <h2 class="margin-top-10">Fixed positioning</h2>
+        <p>
+          When an object is set to fixed position, in most of the cases the
+          object positions itselfs according to the viewport dimensions. There
+          is an exception to this which we will discuss later on in this blog.
+          Also, the object moves out of the normal flow of the page, so
+          surrounding elements position is also effected by it. Looking at Image
+          4.1, we can see that child 1 (brown block) has its position set to
+          fixed. As we scroll down on the page, we can see in image 4.2 that the
+          fixed positioned block has moved out of its parent container and is
+          still positioned according to the viewport.
+        </p>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/codesnap/child-1-fixed.png"
+              alt="code for fixed element"
+            />
+            <img
+              src="/images/html-css-blog/chrome-screenshots/child-fixed.png"
+              alt="brown block fixed positioned"
+            />
+          </div>
+          <p>Image 4.1</p>
+        </div>
+
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/chrome-screenshots/child-fixed-pos-moving.png"
+              alt="fixed element during scroll"
+            />
+          </div>
+          <p>Image 4.2</p>
+        </div>
+        <h2 class="margin-top-10">Exception to Fixed positioning</h2>
+        <p>
+          Most of the times when an object's position is fixed it align itself
+          according to the viewport. There is an exception to this rule. This
+          happens when the parent element has one of the following properties defined in its
+          CSS rules set. These properties are:
+          <ul class="list-style">
+            <li>Transform</li>
+            <li>Perspective</li>
+            <li>Filter</li>
+          </ul>
+        </p>
+        <p>Image 4.3 shows what happens when child element has fixed position and parent element has transform property defined.</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/codesnap/exception-fixed.png"
+              alt="transform property on parent element"
+            />
+            <img
+              src="/images/html-css-blog/chrome-screenshots/exception-fixed.png"
+              alt="child object stays within parent block"
+            />
+          </div>
+          <p>Image 4.3</p>
+        </div>
+        <p>As you can see, now the child element is positioning itself according to the parent element, not the viewport.</p>
+        <h3 id="conclusion">Conclusion</h3>
+        <p>There are lot of differences between relative, absolute and fixed positioning. Some are subtle differences and some clearcut. These properties are very helpful in aligning objects onto an HTML page. They need to be used wisely, keeping in mind that other elements' positions are not effected by using them.</p>
       </div>
     </article>
   </body>
