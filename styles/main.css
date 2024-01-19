@@ -30,8 +30,9 @@ html {
 .landing-area {
   background-image: url('/images/landing.png');
   background-image: url('/images/landing.png'),
-    linear-gradient(rgb(129, 185, 235), rgb(170, 203, 233));
+    linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.441));
   background-size: cover;
+
   background-position-x: right;
   height: 100vh;
 }
@@ -334,5 +335,11 @@ h2 {
   }
   .list-detail {
     max-width: 75%;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 750px) {
+  html {
+    font-size: 35%;
   }
 }
