@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Fundamentals</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <article class="blog-article">
+      <h1>JS Fundamentals</h1>
+      <h2>Javascript basics for beginners</h2>
+      <h3>25 January 2024</h3>
+      <div class="content">
+        <p>
+          Javascript, HTML, and CSS coexist with each other in a symbiotic
+          relationship. One cannot survive without the other.
+        </p>
+        <p class="italics">
+          Let me explain this relationship in easy to understand terms with help
+          of an example.
+        </p>
+        <p>
+          Lets imagine a really beautiful and well built car like this Shelby
+          GT500CR
+        </p>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/javascript-blog/shelby GT500CR (2020).jpg"
+              alt="image of a car"
+            />
+          </div>
+        </div>
+        <p>This represents a beautifully built web page.</p>
+        <p>
+          Now, as we all know that a car is made of lots of different parts.
+          <span class="italics">HTML</span> will represent the raw material to
+          build the car like the steel body, chassis and glass used for the
+          windows. The <span class="italics">CSS</span> will represent the look
+          of the car i.e its color, shape, dimensions etc. The car with its
+          shiny looks wont run if it doesnt have a engine or steering and
+          controls in it. It will just be parked at a showroom. Thus, the word
+          static is used to define a webpage with no javascript in it.
+        </p>
+        <p>
+          To move the car, you have to put engine in it and add steering and
+          other controls to it. This is similar to what
+          <span class="italics">Javascript</span> does. With help of javascript
+          you can change the elements on a webpage however you want, making the
+          page dynamic.
+        </p>
+        <h2>Control Flow</h2>
+        <p>
+          Control Flow is the order in which the program code statements are
+          being executed. Control flow plays important part in the desired
+          outcome of the code.
+        </p>
+        <p>
+          Taking example of the car above again, control flow would be direction
+          towards which car is being driven, at what gear is it being driven. It
+          can go forward or reverse. All this can be controlled from inside the
+          car. Similarily javascript provides us with few tools to control the
+          flow of the program. Some of these tools are Loops, conditional
+          statements and functions.
+        </p>
+        <h2>Loops</h2>
+        <p>
+          As explained above loops are very important part of programming
+          languages. Loops are used to control the flow of the code where you
+          need a particular task to be done repetitively. For example, with the
+          car above, when it is raining we need the wipers to run again and
+          again in the same pattern until the rain stops. Imagine if we had to
+          do it manually, it would be literally impossible. Loops help us in
+          doing these kind of repetitive tasks. It can be better explained with
+          the help of code example below.
+        </p>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/html-css-blog/codesnap/forLoop.png"
+              alt="for Loop"
+            />
+            <img
+              src="/images/javascript-blog/console.png"
+              alt="console.log of for Loop"
+            />
+          </div>
+        </div>
+        <p>
+          Here you can see that we looped 5 times and with each iteration we
+          increased the counter and displayed it in the console.
+        </p>
+        <h2>DOM</h2>
+        <p>
+          DOM is short for Document Object Model. It represents the structure of
+          a webpage that can be used to manipulate the page. DOM thinks of
+          webpage as a combination of nodes and objects. These nodes and objects
+          can be accessed through javascript and modifid as needed.
+        </p>
+        <img
+          class="float"
+          src="../images/javascript-blog/DOMcode.png"
+          style="width: 50%"
+        />
+        <p>
+          If we look at image on the right we can see that DOM manipulation is
+          being done in this code to change the background color of the page.
+          DOM has various different ways to access the HTML page or document. We
+          use the notation "document." to access all the objects of the
+          document. Here we used the command "document.querySelector". We can
+          also use "document.GetElementByID" or
+          "document.GetElementsByClassName" to access the objects by their Id or
+          Class Names. There are several other methods as well which we will not
+          discuss in this article. If you are curious you can visit this
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors"
+            class="italics"
+            >mdn Page</a
+          >
+          on DOM manipulation.
+        </p>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/javascript-blog/beforeDOM.png"
+              alt="Image of a page before DOM manipulation"
+            />
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="image-box">
+            <img
+              src="/images/javascript-blog/DOMmanipulation.png"
+              alt="Image of a page after DOM manipulation"
+            />
+          </div>
+        </div>
+        <p>
+          Here you can see we manipulated DOM and changed the color of "h1"
+          element to red
+        </p>
+        <h2>Arrays and Objects</h2>
+        <p>
+          Arrays and Objects are two diferent ways of storing values in
+          Javascript. Actually Arrays are also a sub-category of objects. The
+          difference in both of them is that in Arrays, we can access values
+          based on their index number while in Objects, we can access values on
+          basis of their named index.
+        </p>
+        <p>
+          We use Arrays when we have collection of values that has something in
+          common. We can put these values together in a single container.
+        </p>
+        <p>
+          For example we have collection of fruits. We can make a array called
+          fruits and put all the values in a single array. We can access these
+          values by calling their index number.
+        </p>
+        <div class="code">
+          <h3>Array example</h3>
+          <p>let fruits = [ 'apple', 'banana', 'oranges', 'peaches' ]</p>
+        </div>
+        <div class="code">
+          <h3>How to access the values in array</h3>
+          <p>fruit[0] = apple</p>
+          <p>fruit[2] = orange</p>
+        </div>
+        <p>
+          On the other hand, Objects are used mainly when we have a collection
+          of different items, which are somehow related to each other. We can
+          then access these stored values with help of their named keys.
+        </p>
+        <p>
+          In example below, we are making an object 'car' with name keys of
+          'type', 'model' and 'color'. We can use two different methods to
+          access values in the object. A dot notation and bracket notation.
+        </p>
+        <div class="code">
+          <h3>Object example</h3>
+          <p>const car = {</p>
+          <p class="padding-left">type:"Ford",</p>
+
+          <p class="padding-left">model:"Shelby GT500CR",</p>
+
+          <p class="padding-left">color:"black"</p>
+          <p class="padding-left">};</p>
+        </div>
+        <div class="code">
+          <h3>How to access the values in array</h3>
+          <p>car.type = Ford</p>
+          <p>car[type] = Ford</p>
+        </div>
+        <h2>Functions</h2>
+        <p>
+          In programming, a function is like a mini-program within a larger
+          program. It does a specific job and can be used over and over.
+          Functions are helpful in many different ways.
+        </p>
+        <img
+          class="float"
+          src="../images/javascript-blog/functions.png"
+          alt="function image"
+          style="width: 45%"
+        />
+        <ul class="list-style">
+          <li>
+            They break down big problems into smaller, more manageable tasks.
+          </li>
+          <li>
+            Once you write a function, you can use it again without rewriting
+            the same code.
+          </li>
+          <li>
+            Functions make code easier to understand by grouping related tasks
+            together.
+          </li>
+          <li>
+            They hide the details of how something works, showing only what's
+            necessary.
+          </li>
+        </ul>
+        <p>
+          In example above we have a function called 'add', which does sum of
+          any two numbers. After declaring the function we have to call the
+          function to make it work. A function can be declared with a set of
+          parameters or without any paramenters. In function above, it takes two
+          numbers as its parameters and add them together. We can see we called
+          the function with <span class="italics">add(2,3)</span>
+        </p>
+        <p>
+          In short, functions make coding more organized, reusable, and
+          understandable. They're like building blocks that contribute to
+          better, more efficient programs.
+        </p>
+      </div>
+      <a class="home-link" href="../index.html">Home Page</a>
+    </article>
+
+    <!-- this is a comment. -->
+  </body>
+</html>
