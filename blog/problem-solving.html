@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem Solving</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <article class="blog-article">
+      <h1>A first person experience of programming problem solving.</h1>
+      <h2>
+        This article tries to have a look at the mindset of a programmer while
+        problem solving.
+      </h2>
+      <h3>31 January 2024</h3>
+
+      <div class="content">
+        <p>
+          I will describe what problem I faced, and how I was able to find the
+          solution.
+        </p>
+        <h2>The Problem</h2>
+        <p>
+          While working on Javascript kata section, I was doing challenge number
+          4, which involved making an empty object called "gradebook" and
+          filling it up with properties which had name keys assigned from an
+          array of students. If you dont know what an Array or an Object is,
+          then visit this
+          <a class="italics" href="./javascript-dom.html">link article</a> where
+          I explain with examples both of them. Then further, I had to assign a
+          property called 'testScores' to each student property and get it's
+          value from another array called "scores".
+        </p>
+        <p>So basically, the output that I was supposed to get was this</p>
+        <pre>
+          <Code>
+          gradebook = {
+                        Joseph: { testScores: [ 80, 70, 70, 100 ]},
+                        Susan: { testScores: [ 85, 80, 90, 90 ]},
+                        Wiremu: { testScores: [ 75, 70, 80, 75 ]},
+                        Elizabeth: { testScores: [ 100, 90, 95, 85 ]}
+                      }
+          </Code>
+        </pre>
+        <p>
+          At the end of each challenge, your code is passed through a test. I
+          felt really confident with my solution but I kept failing the test. I
+          tried everything but I could not get the test to pass. So the solution
+          that I got from code was this.
+        </p>
+        <pre>
+          <Code>
+          gradebook = {
+                        Joseph: { testscores: [ 80, 70, 70, 100 ]},
+                        Susan: { testscores: [ 85, 80, 90, 90 ]},
+                        Wiremu: { testscores: [ 75, 70, 80, 75 ]},
+                        Elizabeth: { testscores: [ 100, 90, 95, 85 ]}
+                      }
+          </Code>
+        </pre>
+        <p>
+          Do you see the difference?
+          <span style="font-weight: bold">Exactly my point.</span>
+        </p>
+        <p>I could'nt understand where my code was going wrong.</p>
+        <h2>The Solution</h2>
+        <p>
+          So I used several methods to try to solve this problem. Firstly, I
+          used console log method to see what exactly was the result of my code.
+          Then I went through the error messages of my test code and had look at
+          what exactly were the requirements of the test. Then I console logged
+          each small component of the code to see if any particular part of the
+          code was wrong. Then I also did some google search and looked through
+          stack overflow to find the solution. Even after all this I could not
+          find the solution. So finally after exhausting all the methods I
+          reached out for help on Dev academy tech support channel.
+        </p>
+        <p>
+          Turns out, I made a silly mistake of using name key
+          <span class="bold">'testscores'</span> instead of
+          <span class="bold">'testScores'</span> which the test was expecting
+          from me. The solution was right in front of me but I failed to see it.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Writing any code can be very frustrating at times and more often than
+          not, it is some silly spelling mistake or a syntax mistake. The key
+          take-away here is to remain calm and try to cover all your bases. If
+          even then you are not able to find the solution, dont be afraid to ask
+          for help.
+        </p>
+      </div>
+      <a class="home-link" href="../index.html">Home Page</a>
+    </article>
+  </body>
+</html>
