@@ -409,10 +409,16 @@ pre code {
   .list-detail {
     max-width: 75%;
   }
+  pre code {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 400px) and (max-height: 750px) {
   html {
     font-size: 35%;
+  }
+  pre code {
+    font-size: 1rem;
   }
 }
