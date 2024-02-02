@@ -1,4 +1,8 @@
 'use strict'
+window.onload = function () {
+  document.getElementById('hideAll').style.display = 'none'
+}
+
 const techButton = document.getElementById('tech-button')
 const coreButton = document.getElementById('core-button')
 const techContainer = document.getElementById('tech')
