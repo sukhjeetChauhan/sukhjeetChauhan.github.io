@@ -73,7 +73,37 @@ h2 {
   margin-top: 5rem;
 }
 
+/* //////////////////////////////////////////////// */
+/* Section blog */
+/* ////////////////////////////////////////////// */
+
+.options {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button-option {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #2b8a3e;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0px 0px 1px #555;
+}
+
+.button-option.active {
+  background-color: #2b8a3e;
+  color: #fff;
+}
+
 /* blog List styles */
+.hidden {
+  display: none;
+}
+
 .blog-area h2 {
   margin-top: 4rem;
   color: #277c38;
