@@ -29,11 +29,10 @@ html {
 .section {
   margin: 0 auto;
   padding: 7rem 10rem;
-  border-bottom: 1px solid #333;
-  background-color: #fff;
+
   max-width: 120rem;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* /////////////////////////////////////// */
@@ -80,7 +79,7 @@ html {
   background-size: cover;
 
   background-position-x: right;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .section.landing-area {
@@ -97,8 +96,10 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  font-weight: bold;
   margin-bottom: 4rem;
   color: #113719;
+  text-transform: uppercase;
 }
 
 .landing-area p {
