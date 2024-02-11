@@ -51,3 +51,11 @@
   margin-top: 4rem;
   color: #277c38;
 }
+
+.project-link {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #7ab586;
+  color: #fff;
+}
